@@ -186,8 +186,6 @@ python DeepDPM.py \
 
 ## Notes
 
-- The commands above are the main paper-facing DeepDP-TGMM configurations, rewritten with relative dataset paths for release.
-- The repository may also include additional scripts for ablations, sensitivity analyses, and alternative SSL backbones.
 - When using your own embeddings, keep the tensor format consistent with the expected `.pt` files.
 
 ## Citation
