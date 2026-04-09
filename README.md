@@ -43,17 +43,17 @@ A typical directory layout is:
 pretrained_embeddings/
 ├── MOCO/
 │   ├── cifar10/
-│   ├── cifar10imbv2/
+│   ├── cifar10imb/
 │   ├── cifar20/
-│   └── cifar20imbv3/
+│   └── cifar20imb/
 ├── byol/
-│   ├── cifar10_v3_nonnormalized/
-│   └── imb_version/imb_versions/cifar10_v3_nonnormalized_v2/
+│   ├── cifar10/
+│   └── cifar10imb/
 └── simsiam/
     ├── cifar20/
-    ├── cifar20imbv3/
+    ├── cifar20imb/
     ├── imagenet10/
-    └── imagenet10imbv2/
+    └── imagenet10imb/
 ```
 
 ## Representative commands
@@ -101,7 +101,7 @@ python DeepDPM.py \
   --train_cluster_net 25 \
   --transform_input_data None \
   --log_metrics_at_train True \
-  --dir ./pretrained_embeddings/byol/cifar10_v3_nonnormalized \
+  --dir ./pretrained_embeddings/byol/cifar10 \
   --offline \
   --prior_kappa 0.005 \
   --alpha 10 \
@@ -132,7 +132,7 @@ python DeepDPM.py \
   --train_cluster_net 25 \
   --transform_input_data None \
   --log_metrics_at_train True \
-  --dir ./pretrained_embeddings/simsiam/cifar20imbv3 \
+  --dir ./pretrained_embeddings/simsiam/cifar20imb \
   --offline \
   --prior_kappa 0.005 \
   --alpha 10 \
